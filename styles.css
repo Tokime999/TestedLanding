@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
 }
@@ -19,7 +18,7 @@ body {
   background-size: cover;
 }
 .Started_Block {
-    background-color: rgb(100, 100, 100);
+  background-color: rgb(100, 100, 100);
   height: 800px;
   border-radius: 0% 0% 15% 15%;
   background: url("https://vsegda-pomnim.com/uploads/posts/2022-04/1648955994_27-vsegda-pomnim-com-p-lesa-kamchatki-foto-32.jpg");
@@ -27,16 +26,24 @@ body {
   position: relative;
 }
 .Finished_Block {
-    background-color: rgb(100, 100, 100);
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
+  background-color: rgb(100, 100, 100);
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 header {
   background-color: rgba(255, 94, 0, 0.568);
 }
+header {
+  background-color: rgba(255, 94, 0, 0.568);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px 0; /* Добавляем небольшой отступ сверху и снизу */
+}
+
 .tel_btn,
 .wap_btn,
 .tg_btn {
@@ -46,6 +53,7 @@ header {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  margin: 0 10px; /* Добавляем небольшой отступ между кнопками */
 }
 
 .tel_btn a,
@@ -54,7 +62,7 @@ header {
   font-size: 1.5rem;
   color: #333333;
   text-decoration: none;
-  transition: color .7s ;
+  transition: color 0.7s;
 }
 
 .tel_btn a:hover {
@@ -67,13 +75,13 @@ header {
   color: rgb(0, 158, 206);
 }
 .Combined_Block {
-    background: url("https://img1.akspic.ru/crops/3/1/3/1/0/101313/101313-dikaya_mestnost-gora-tundra-gornyj_relef-senokosnoye_ugodye-3840x2160.jpg");
-    background-attachment: fixed;
-    background-size: cover;
-    height: 1600px; /* Общая высота двух блоков */
-    border-radius: 0% 0% 50% 50%; /* Закругление углов */
-  }
- .catalog_btn {
+  background: url("https://img1.akspic.ru/crops/3/1/3/1/0/101313/101313-dikaya_mestnost-gora-tundra-gornyj_relef-senokosnoye_ugodye-3840x2160.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  height: 1600px; /* Общая высота двух блоков */
+  border-radius: 0% 0% 50% 50%; /* Закругление углов */
+}
+.catalog_btn {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -89,81 +97,85 @@ header {
   font-weight: 300;
   border-radius: 8px;
 }
-.catalog_btn a:hover{
-    transform: scale(1.05);
+.catalog_btn a:hover {
+  transform: scale(1.05);
 }
-.catalog_btn a{
-    text-decoration: none; /* Убираем подчеркивание у ссылки */
-    color: white; /* Устанавливаем цвет текста ссылки */
+.catalog_btn a {
+  text-decoration: none; /* Убираем подчеркивание у ссылки */
+  color: white; /* Устанавливаем цвет текста ссылки */
 }
 footer {
-    position: sticky;
-    top: 100%;
-    background-color: rgb(68, 68, 68);
-  }
-  .catalog_btn2 {
-    background-color: red;
-    color: rgb(231, 8, 8);
-    padding: 20px 40px;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    font-size: 18px;
-    letter-spacing: 1px;
-    font-weight: 300;
-    border-radius: 8px;
-    margin: 50px 50px;
-
-  }
-  .catalog_btn2 a {
-    text-decoration: none;
-    color: white;
-  }
-  /* Медиа-запрос для мобильных устройств */
+  position: sticky;
+  top: 100%;
+  background-color: rgba(255, 94, 0, 0.568);
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding: 10px 0; /* Добавляем небольшой отступ сверху и снизу */
+}
+.catalog_btn2 {
+  background-color: red;
+  color: rgb(231, 8, 8);
+  padding: 20px 40px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 18px;
+  letter-spacing: 1px;
+  font-weight: 300;
+  border-radius: 8px;
+  margin: 50px 50px;
+}
+.catalog_btn2 a {
+  text-decoration: none;
+  color: white;
+}
+/* Медиа-запрос для мобильных устройств */
 @media (max-width: 480px) {
-    .Container {
-      padding: 0px;
-    }
-    .tel_btn,
-    .wap_btn,
-    .tg_btn {
-      width: 100%;
-      margin-bottom: 10px;
-    }
-    .catalog_btn,
-    .catalog_btn2 {
-      width: 100%;
-    }
+  .Container {
+    padding: 0px;
   }
-  
-  /* Медиа-запрос для планшетов */
-  @media (min-width: 481px) and (max-width: 768px) {
-    .Container {
-      padding: 0px;
-    }
-    .tel_btn,
-    .wap_btn,
-    .tg_btn {
-      width: 50%;
-    }
-    .catalog_btn,
-    .catalog_btn2 {
-      width: 50%;
-    }
+  .tel_btn,
+  .wap_btn,
+  .tg_btn {
+    width: 100%;
+    margin-bottom: 10px;
+    float: left;
   }
-  
-  /* Медиа-запрос для десктопов */
-  @media (min-width: 769px) {
-    .Container {
-      padding: 0px;
-    }
-    .tel_btn,
-    .wap_btn,
-    .tg_btn {
-      width: auto;
-    }
-    .catalog_btn,
-    .catalog_btn2 {
-      width: auto;
-    }
+  .catalog_btn,
+  .catalog_btn2 {
+    width: 100%;
   }
+}
+
+/* Медиа-запрос для планшетов */
+@media (min-width: 481px) and (max-width: 768px) {
+  .Container {
+    padding: 0px;
+  }
+  .tel_btn,
+  .wap_btn,
+  .tg_btn {
+    width: 50%;
+  }
+  .catalog_btn,
+  .catalog_btn2 {
+    width: 50%;
+  }
+}
+
+/* Медиа-запрос для десктопов */
+@media (min-width: 769px) {
+  .Container {
+    padding: 0px;
+  }
+  .tel_btn,
+  .wap_btn,
+  .tg_btn {
+    width: auto;
+  }
+  .catalog_btn,
+  .catalog_btn2 {
+    width: auto;
+  }
+}
